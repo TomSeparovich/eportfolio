@@ -13,6 +13,8 @@ Body {
   background-color: rgb(255, 245, 245); 
 }
 
+
+/* Header of Page */
 .Header {
   display: flex;
   flex-direction: column;
@@ -27,6 +29,12 @@ Body {
   display: flex;
   justify-content: center; 
   width: 100%; 
+}
+
+.SubHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Name {
@@ -57,6 +65,7 @@ Body {
   margin: 0 auto; 
 }
 
+/*Body */
 .Heading {
   font-size: 32px;
   color: black;
@@ -83,4 +92,70 @@ Body {
 
 .Heading::after {
   right: -25%; 
+}
+
+
+/*About Me*/
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.AboutContent {
+  display: flex;
+  flex-wrap: wrap; /* This allows the text to wrap under the image */
+  margin-top: 20px;
+}
+
+.AboutImage {
+  flex: 0 0 30%; /* Sets the image width to 30% of the container and prevents it from growing or shrinking */
+  max-width: 30%; /* Ensures the image does not exceed 30% width */
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px; /* Optional: Adds some space between the image and the text */
+}
+
+.button {
+  background-color: #1a1a1a; /* Dark accent color */
+  color: #ffffff; /* White text color for contrast */
+  border: none; /* No border for a clean look */
+  padding: 10px 30px; /* Padding for size */
+  font-size: 16px; /* Appropriate text size */
+  font-weight: bold; /* Bold text for emphasis */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to a pointer to indicate it's clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+  text-transform: uppercase; /* Uppercase text for a more professional look */
+  letter-spacing: 1px; /* Increase letter spacing for readability */
+}
+
+.button:hover {
+  background-color: #333333; /* Darker shade on hover for visual feedback */
+  transform: translateY(-2px); /* Slight raise effect on hover */
+}
+
+.button:active {
+  transform: translateY(1px); /* Push effect when clicked*/
+}
+
+
+.Text {
+  flex: 1; /* Allows the text to fill the remaining space */
+}
+
+
+/*Contact Me*/
+.Contact {
+  display: flex;
+  justify-content: space-between;
+}
+.ContactItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactItem {
+  display: flex;
 }
