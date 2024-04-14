@@ -1,8 +1,8 @@
-'use client'
+import './App.css';
 
-export default function Home() {
+export default function App() {
 
-  const scrollToSection = (sectionId: string): void => {
+  const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -26,14 +26,14 @@ export default function Home() {
           <div className="AboutMe" id="AboutMe">
             <h2 className="Heading">About Me</h2>
             <div className="AboutContent">
-              <img src="AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
+              <img src="images/AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
               <div className="Text">
                 <p>
-                  I'm Thomas Separovich, a final year Software Engineering Student.
+                  Im Thomas Separovich, a final year Software Engineering Student.
                 </p>
                 <p>
                   Over the past 4 years studying at the University of Technology Sydney, 
-                  I've developed a keen interest in new and emerging technologies such as 
+                  Ive developed a keen interest in new and emerging technologies such as 
                   generative artificial intelligence & cloud computing. These cutting edge 
                   technologies are revolutionising industries and the oportunity to develop
                   and have impact on the world drives me.
@@ -50,7 +50,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <a href={"/ThomasSeparovich_Resume.pdf"} download>
+            <a href={"files/ThomasSeparovich_Resume.pdf"} download>
               <button type="button" className="button">Download File</button>
             </a>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
                   <p>github.com/TomSeparovich</p>
                 </div>
               </div>
-              <img src="AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
+              <img src="images/AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
             </div>
             
           </div>
