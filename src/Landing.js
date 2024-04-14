@@ -1,6 +1,6 @@
-import './App.css';
+import './Landing.css';
 
-export default function App() {
+export default function Landing() {
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -26,7 +26,7 @@ export default function App() {
           <div className="AboutMe" id="AboutMe">
             <h2 className="Heading">About Me</h2>
             <div className="AboutContent">
-              <img src="images/AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
+              <img src={process.env.PUBLIC_URL + "/images/AboutMeImage.jpg"} alt="Thomas Separovich Faceshot" className="AboutImage" />
               <div className="Text">
                 <p>
                   Im Thomas Separovich, a final year Software Engineering Student.
@@ -51,7 +51,7 @@ export default function App() {
               </div>
             </div>
             <a href={"files/ThomasSeparovich_Resume.pdf"} download>
-              <button type="button" className="button">Download File</button>
+              <button type="button" className="button">Download Resume</button>
             </a>
           </div>
 

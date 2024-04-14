@@ -1,0 +1,21 @@
+.citations {
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.citation {
+  background-color: #f8f8f8;
+  border-left: 4px solid #0078D4;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.citation a {
+  color: #0078D4;
+  text-decoration: none;
+}
+
+.citation a:hover {
+  text-decoration: underline;
+}
