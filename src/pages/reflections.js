@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import './Landing.css'
+
 
 export default function Reflections() {
   const [reflectionBool, setReflectionBool] = useState(1);
@@ -7,10 +10,15 @@ export default function Reflections() {
     <div className="Page">
       <div className="Header">
       <p className="Name">Reflections</p>
-          <div className="Headings">
-            <p className="Heading-Link" onClick={() => setReflectionBool(1)}>   Sustainability</p>
-            <p className="Heading-Link" onClick={() => setReflectionBool(0)}>   Professional Practice</p>
-          </div>
+        <div className="Headings">
+          <p className="Heading-Link" onClick={() => setReflectionBool(1)}>   Sustainability</p>
+          <p className="Heading-Link" onClick={() => setReflectionBool(0)}>   Professional Practice</p>
+          <p>
+            <Link to="/" className='Heading-Link'>
+              Home
+            </Link>
+          </p>
+        </div>
       </div>
       <div className="Body">
         {reflectionBool ? 

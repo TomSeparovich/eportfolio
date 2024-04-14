@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import './Landing.css';
 
 export default function Landing() {
@@ -19,6 +20,11 @@ export default function Landing() {
             <p className="Heading-Link" onClick={() => scrollToSection('Education')}>       Education</p>
             <p className="Heading-Link" onClick={() => scrollToSection('WorkExperience')}>  Work Experience</p>
             <p className="Heading-Link" onClick={() => scrollToSection('Contact')}>         Contact</p>
+            <p>
+            <Link to="/reflections" className="Heading-Link"> 
+              Reflections
+            </Link>
+            </p>
           </div>
         </div>
 
@@ -126,7 +132,7 @@ export default function Landing() {
                   <p>github.com/TomSeparovich</p>
                 </div>
               </div>
-              <img src="images/AboutMeImage.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
+              <img src="images/Image.jpg" alt="Thomas Separovich Faceshot" className="AboutImage" />
             </div>
             
           </div>

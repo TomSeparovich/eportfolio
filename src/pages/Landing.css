@@ -46,12 +46,14 @@ Body {
   cursor: pointer;
   position: relative;
   padding: 0 10px; 
+  text-decoration: none;
+  color: white;
 }
 
 .Heading-Link::after {
   content: "|";
   position: absolute;
-  right: -5px; 
+  right: 0px; 
   color: white; 
 }
 
